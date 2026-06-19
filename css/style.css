@@ -173,17 +173,6 @@ li {
     margin-bottom: 8px;
 }
 
-.card .speaker-status {
-    color: #137333;
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-.card .speaker-status.pending {
-    color: #b06000;
-}
-
 .card .talk-title {
     font-size: 14px;
     font-style: italic;
