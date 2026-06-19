@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboLetics 3.0</title>
+    <title>RoboLetics 3.0 | CoRL 2026 Workshop</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav aria-label="Main navigation">
         <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#benchmark">Benchmark</a></li>
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#speakers">Invited Speakers</a></li>
             <li><a href="#call">Call for Submissions</a></li>
@@ -18,142 +19,334 @@
     </nav>
 
     <header id="home">
-        <h1>RoboLetics 3.0: Workshop on Humanoid Embodiment in Mixed Human-Robot Sports @ IROS 2026</h1>
-        <p>The third edition of the RoboLetics workshop series</p>
+        <h1>RoboLetics 3.0: Benchmarks for Agile Physical Human-Robot Interaction</h1>
+        <p>CoRL 2026 Workshop</p>
     </header>
 
     <main>
         <section id="venue">
             <h2>Venue and Date</h2>
             <div class="info-box">
-                <p><strong>Time:</strong> September 27 – October 1, 2026 (TBD)</p>
-                <p><strong>Location:</strong> Pittsburgh, PA (TBD)</p>
+                <p><strong>Event:</strong> Conference on Robot Learning (CoRL) 2026</p>
+                <p><strong>Date:</strong> November 9, 2026</p>
+                <p><strong>Location:</strong> JW Marriott Austin, 110 E 2nd St, Austin, TX 78701, USA</p>
                 <p><strong>Room:</strong> TBD</p>
             </div>
         </section>
 
-        <section id="online">
-            <h2>Online Attendance (Zoom Meeting Room)</h2>
-            <p>Virtual attendance link: TBD</p>
-        </section>
-
         <section id="overview">
             <h2>Overview</h2>
+            <div>
+                <p>
+                    Sports have served as the ultimate stress test for human agility and collective intelligence. As
+                    robots transition into shared everyday spaces, operating in proximity to humans necessitates
+                    approachable embodiments with high levels of autonomy and coordination. The pursuit of mixed
+                    human-robot sports provides a natural stepping-stone to developing robot partners that are
+                    simultaneously agile, collaborative, and trustworthy. Beyond technical advancement, sports provide
+                    an accessible and compelling medium to engage society with robotics research.
+                </p>
+                <p>
+                    RoboLetics 3.0 champions mixed human-robot sports as the next grand challenge for robotics. We will
+                    explore the development of benchmarks based on collaborative physical sports to emphasize
+                    human-robot interaction (HRI). By imposing physical constraints alongside real-time social dynamics,
+                    these benchmarks will provide structured environments to force the integration of embodiment design,
+                    explosive motor control and partner models, to develop safe, fluid, performant collaboration.
+                </p>
+                <p>
+                    Our workshop brings together robot learning and HRI communities to collectively address critical
+                    challenges in agile physical HRI. Through a diverse program including invited talks from academic
+                    and industry experts, moderated audience discussions, spotlight presentations from early-career
+                    researchers, curated robot demonstration videos, a simulation benchmark prototype based on doubles
+                    tennis, structured breakout sessions, and a panel discussion, the workshop aims to synthesize
+                    perspectives from researchers at all career stages and diverse backgrounds. In partnership with the
+                    Robotics and AI Institute, our workshop will showcase the latest innovations, foster interdisciplinary
+                    dialogue, and develop a roadmap to guide the future of agile, collaborative robotics.
+                </p>
+            </div>
+        </section>
+
+        <section id="questions">
+            <h2>Core Research Questions</h2>
             <p>
-                Sports have long served as a stress test for human agility, coordination, and collective intelligence.
-                Mixed human-robot sports represent the next grand challenge for robotics, requiring machines to move,
-                perceive, decide, and interact safely and fluently alongside people in dynamic, physical environments.
-            </p>
-            <p>
-                RoboLetics 3.0 champions mixed human-robot sports as the next grand challenge for robotics. The workshop
-                brings together researchers and practitioners to advance:
+                Our workshop proposes mixed human-robot sports as a principled design space for benchmarking and
+                catalyzing agile physical human-robot interaction research. Our goal is to identify benchmark tasks,
+                evaluation methodologies, safety constraints, fairness criteria, rules for difficulty level progression
+                that stress-test aspects of agile physical HRI, embodiment design, models, control algorithms and push
+                their translation into real-world applications.
             </p>
             <ul>
-                <li>Benchmarks for mixed human-robot sports</li>
-                <li>Design of humanoids and humanoid-like robots for athletic interaction</li>
-                <li>Models and algorithms for control, safety, communication, intent estimation, and decision making</li>
+                <li>
+                    <strong>Mapping sports properties to benchmark design:</strong> How to systematically translate
+                    sports’ characteristics into benchmark specifications? For instance, tasks with central objects in
+                    play (e.g., soccer, basketball, tennis) test agility and collaborative strategy, physical contact
+                    collaboration (e.g., cheerleading, acrobatics) balances coordination with safety, etc.
+                </li>
+                <li>
+                    <strong>Stress-testing algorithms and models:</strong> How to design benchmarks that effectively
+                    challenge models and algorithms for control involving dynamic contact, real-time safety verification,
+                    verbal/non-verbal communication, intent estimation, initiative-taking and role switching, human
+                    partner modeling, theory-of-mind reasoning?
+                </li>
+                <li>
+                    <strong>Progressive specification:</strong> How to formulate sports’ rules that enable systematic
+                    progression across difficulty levels so that it provides meaningful incremental challenges? How to
+                    design benchmarks that test collaboration and strategic consensus at various timescales—from
+                    real-time coordination to multi-step strategic planning?
+                </li>
+                <li>
+                    <strong>Multi-faceted safety constraints:</strong> How to formally specify and evaluate diverse safety
+                    dimensions such as physical safety during contact or psychological/perceived safety for human partners?
+                </li>
+                <li>
+                    <strong>Fairness and robot morphologies:</strong> How to define fair evaluation when robots have
+                    different morphologies, identify which have systematic advantages/disadvantages in specific sports,
+                    and design handicapping mechanisms that provide insightful comparisons across embodiments?
+                </li>
+                <li>
+                    <strong>Research prioritization:</strong> Which research questions should be prioritized in the short
+                    and long term to advance the field of agile physical HRI through sport-based benchmarking?
+                </li>
             </ul>
+        </section>
+
+        <section id="benchmark">
+            <h2>Benchmark Prototype</h2>
+            <p>
+                As a concrete workshop outcome, we will develop a community-informed simulation benchmark prototype for
+                mixed human-robot sports, based on doubles tennis. The prototype, seeded by our prior wheelchair tennis
+                research, will be refined through input collected during the breakout sessions, moderated discussions,
+                and panel discussion. The goal is not to prescribe a single benchmark in advance, but to use the
+                workshop to identify reusable design principles for sport-inspired simulation benchmarks, including task
+                abstractions, difficulty progressions, safety constraints, fairness criteria, and evaluation metrics.
+            </p>
+            <p>
+                The doubles tennis benchmark will consider the following progressively rich levels. Videos of baseline
+                behaviors are available below. Workshop feedback will be used to define both objective metrics, such as
+                task success and game score, and human-centered metrics, such as perceived safety, workload, and
+                enjoyment.
+            </p>
+            <ol>
+                <li>
+                    <strong>Kinematic Interception:</strong> The agent must navigate to place an incoming ball within the
+                    racket workspace.
+                </li>
+                <li>
+                    <strong>Dynamic Returns:</strong> The agent must return the ball to the opponent’s side considering
+                    actuator, ball-flight, and racket-ball contact dynamics.
+                </li>
+                <li>
+                    <strong>Collaborative Rally:</strong> Human/robot collaborators are introduced in 1+1 or 2+2
+                    configurations and success is measured by safe sustained rallying. This level supports two settings:
+                    (1) policies for all agents are learned jointly; (2) policies for collaborators are predefined.
+                </li>
+                <li>
+                    <strong>Competitive:</strong> The agent must compete and defeat the opponent in a 1v1 setting with a
+                    standard tennis scoring scheme. Opponent policies of various proficiencies are provided.
+                </li>
+                <li>
+                    <strong>Mixed Collaboration-Competition:</strong> The agent must collaborate with its teammate and
+                    defeat the opponent team in a 2v2 configuration. Opponent team policies of various proficiencies are
+                    provided. This level supports two settings: (1) policies for the agent and teammate are learned
+                    jointly; (2) policies for the collaborating teammate are predefined.
+                </li>
+            </ol>
+            <p>
+                Predefined behaviors for proxy-human agents will be initially realized with scripted, parameterized
+                policies, baseline learning/planning agents, and in the long-term support richer community-developed
+                human behavior models.
+            </p>
+            <video controls preload="metadata" width="100%">
+                <source src="videos/roboletics_benchmark_preview.mp4" type="video/mp4">
+                Your browser does not support embedded video.
+            </video>
         </section>
 
         <section id="schedule">
             <h2>Schedule</h2>
             <div class="table-wrapper">
-                <table class="schedule-table">
-                    <caption>RoboLetics 3.0 workshop schedule</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Time</th>
-                            <th scope="col">Talk</th>
-                            <th scope="col">Comments</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><time datetime="08:30">08:30</time> – <time datetime="08:40">08:40 am</time></td>
-                            <td>Introduction</td>
-                            <td>Dr. Matthew Gombolay</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="08:40">08:40</time> – <time datetime="09:00">09:00 am</time></td>
-                            <td>Talk 1: Hardware design principles required to enable athletic capabilities in humanoid robots.</td>
-                            <td>Dr. Nico Rojas</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="09:00">09:00</time> – <time datetime="09:20">09:20 am</time></td>
-                            <td>Talk 2: Modern learning-based control methods for athletic humanoid behaviors</td>
-                            <td>Dr. Guanya Shi</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="09:20">09:20</time> – <time datetime="09:30">09:30 am</time></td>
-                            <td>Audience Discussion</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="09:30">09:30</time> – <time datetime="10:00">10:00 am</time></td>
-                            <td>Student Paper Spotlights</td>
-                            <td>3 min flash talks</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="10:00">10:00</time> – <time datetime="10:40">10:40 am</time></td>
-                            <td>Poster Session &amp; Coffee Break</td>
-                            <td>Hardware Demos / Curated Robot Demo Videos</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="10:40">10:40</time> – <time datetime="11:00">11:00 am</time></td>
-                            <td>Talk 3: Fast-moving robots for mixed human-robot sports</td>
-                            <td>Dr. Nadia Figueroa</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="11:00">11:00</time> – <time datetime="11:20">11:20 am</time></td>
-                            <td>Talk 4: <abbr title="To be determined">TBD</abbr></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="11:20">11:20</time> – <time datetime="11:30">11:30 am</time></td>
-                            <td>Audience Discussion</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="11:30">11:30 am</time> – <time datetime="12:00">12:00 pm</time></td>
-                            <td>Breakout Session</td>
-                            <td>5–6 groups discussing benchmark principles, evaluation frameworks, and potential research directions</td>
-                        </tr>
-                        <tr>
-                            <td><time datetime="12:00">12:00</time> – <time datetime="12:30">12:30 pm</time></td>
-                            <td>Panel Discussion</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table class="schedule-table">
+                        <caption>RoboLetics 3.0 workshop schedule</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Time</th>
+                                <th scope="col">Talk</th>
+                                <th scope="col">Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><time datetime="08:30">8:30</time>–<time datetime="08:40">8:40 am</time></td>
+                                <td>Introduction</td>
+                                <td>Matthew Gombolay</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="08:40">8:40</time>–<time datetime="09:00">9:00 am</time></td>
+                                <td>Talk 1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="09:00">9:00</time>–<time datetime="09:20">9:20 am</time></td>
+                                <td>Talk 2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="09:20">9:20</time>–<time datetime="09:30">9:30 am</time></td>
+                                <td>Moderated Audience Discussion</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="09:30">9:30</time>–<time datetime="09:50">9:50 am</time></td>
+                                <td>Talk 3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="09:50">9:50</time>–<time datetime="10:30">10:30 am</time></td>
+                                <td>Student Paper Spotlights</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="10:30">10:30</time>–<time datetime="11:00">11:00 am</time></td>
+                                <td>Poster Session, Curated Demo Videos</td>
+                                <td>Coffee Break</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="11:00">11:00</time>–<time datetime="11:20">11:20 am</time></td>
+                                <td>Talk 4</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="11:20">11:20</time>–<time datetime="11:30">11:30 am</time></td>
+                                <td>Moderated Audience Discussion</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="11:30">11:30 am</time>–<time datetime="12:00">12:00 pm</time></td>
+                                <td>Breakout Session</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 pm</time></td>
+                                <td>Panel Discussion</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div>
+        </section>
+
+        <section id="format">
+            <h2>Format and Interactivity</h2>
+            <p>
+                The structure of the workshop reflects our objective to produce a community roadmap to collaboratively
+                guide the future of robotics research. We provide several avenues to gather viewpoints from researchers
+                with diverse backgrounds across all stages in their careers.
+            </p>
+            <h3>Invited Talks, Moderated Audience Discussion</h3>
+            <p>
+                Talks will feature experts from academia, industry, and early-career researchers, representing the
+                state-of-the-art in athletic robots, embodiment design, and HRI, with dedicated Q&amp;A sessions to
+                encourage direct audience engagement. A moderated discussion session will follow, where a moderator will
+                invite audience to ask questions, share perspectives, and explore contrasting viewpoints. To facilitate
+                participation, we will set up an online portal for anonymous submission of questions and comments
+                throughout the session, which organizers will relay to speakers and moderators.
+            </p>
+            <h3>Panel Discussion</h3>
+            <p>
+                Invited speakers will discuss key questions towards forming a community roadmap for agile physical HRI,
+                such as benchmarks for advancing mixed human-robot sports, and translation of collaborative athletic
+                robotics into real-world applications. We will include time for questions from the audience to provide an
+                open platform for discussion.
+            </p>
+            <h3>Spotlight Talks, Poster Session, Robot Demonstration Videos</h3>
+            <p>
+                Students and early career researchers will present their work in short spotlight presentations, followed
+                by a poster session. Participants will have the opportunity to share their research and receive feedback
+                through direct interaction with attendees, fostering discussion around emerging ideas and open research
+                challenges. Additionally, videos of robots demonstrating agility and collaboration will be curated from
+                the internet and played during the poster session. We expect the visual presentation to improve and
+                ground the focus of discussion among poster session attendees.
+            </p>
+        </section>
+
+        <section id="breakout">
+            <h2>Structured Breakout Sessions</h2>
+            <p>
+                Participants will break out into groups of 5–7. The breakout session will be organized around different
+                axes of agile physical HRI that arise across multiple sport-inspired domains. Each group will be assigned
+                one axis and will collaboratively develop benchmark specifications and concrete evaluation protocols.
+                Candidate breakout axes include:
+            </p>
+            <ul>
+                <li><strong>Coordination across timescales:</strong> Benchmarks for collaboration across fast reactions, between-play adaptation, and longer-horizon strategy.</li>
+                <li><strong>Physical coupling and contact:</strong> Benchmarks for shared-object interaction, physical proximity, contact, and recovery from unexpected interaction.</li>
+                <li><strong>Communication and intent inference:</strong> Benchmarks for verbal, gestural, gaze-based, and implicit communication during fast physical collaboration.</li>
+                <li><strong>Role switching and initiative-taking:</strong> Benchmarks for dynamic transitions between leader, follower, supporter, defender, and initiator roles.</li>
+                <li><strong>Safety, trust, and graceful failure:</strong> Benchmarks for physical safety, perceived safety, trust calibration, and safe degradation under failure.</li>
+                <li><strong>Morphology and fairness:</strong> Benchmarks for comparing heterogeneous robot embodiments and defining fair evaluation rules across platforms.</li>
+            </ul>
+            <p>
+                Groups will collaborate on the assigned axis for 20 minutes and then present their outcomes in brief
+                2-minute pitches to the full workshop audience.
+            </p>
         </section>
 
         <section id="speakers">
             <h2>Invited Speakers</h2>
-            <div class="card-grid">
+            <div class="card-grid speakers-grid">
                 <div class="card">
                     <img src="images/nico-rojas.png" alt="Dr. Nico Rojas">
                     <div class="name">Dr. Nico Rojas</div>
-                    <div class="affiliation">RAI Institute, USA</div>
-                    <div class="talk-title">"Hardware design principles for athletic capabilities in humanoid robots"</div>
-                </div>
-                <div class="card">
-                    <img src="images/farbod-farshidian.png" alt="Dr. Farbod Farshidian">
-                    <div class="name">Dr. Farbod Farshidian</div>
-                    <div class="affiliation">RAI Institute, USA</div>
-                    <div class="talk-title">"Hardware design principles for athletic capabilities in humanoid robots"</div>
+                    <div class="affiliation">Robotics and AI Institute, USA</div>
+                    <div class="speaker-status">Committed</div>
+                    <div class="talk-title">Talk title: TBD</div>
+                    <p class="speaker-bio">
+                        Dr. Nico Rojas brings expertise in the mechanical design of high-performance robotic systems as a
+                        project lead for dynamic manipulation at RAI. His perspective will help the workshop determine
+                        how morphology, actuation, inertia, power, and mechanical robustness should be represented in
+                        sport-based benchmarks, including how embodiment enables athletic performance and how evaluation
+                        can remain meaningful and fair across heterogeneous robot platforms.
+                    </p>
                 </div>
                 <div class="card">
                     <img src="images/guanya-shi.png" alt="Dr. Guanya Shi">
                     <div class="name">Dr. Guanya Shi</div>
                     <div class="affiliation">Carnegie Mellon University, USA</div>
-                    <div class="talk-title">"Humanoid Whole-Body Control and Loco-Manipulation"</div>
+                    <div class="speaker-status">In-person</div>
+                    <div class="talk-title">Talk title: TBD</div>
+                    <p class="speaker-bio">
+                        Prof. Guanya Shi develops learning and control methods for reliable, adaptive, and agile
+                        general-purpose robots, with recent work on humanoid whole-body control and loco-manipulation.
+                        His expertise is directly relevant to designing benchmarks that couple locomotion, object
+                        interaction, contact, and rapid adaptation, and to defining progressive task levels that
+                        distinguish motion imitation from robust, physically grounded, whole-body athletic behavior.
+                    </p>
                 </div>
                 <div class="card">
                     <img src="images/nadia-figueroa.png" alt="Dr. Nadia Figueroa">
                     <div class="name">Dr. Nadia Figueroa</div>
                     <div class="affiliation">University of Pennsylvania, USA</div>
-                    <div class="talk-title">"Fast-moving robots for mixed human-robot sports"</div>
+                    <div class="speaker-status pending">Invited · Confirmation pending</div>
+                    <div class="talk-title">Talk title: TBD</div>
+                    <p class="speaker-bio">
+                        Prof. Nadia Figueroa studies fluid human-robot collaborative autonomy through tightly integrated
+                        learning, control, perception, and estimation methods for safe and adaptive physical interaction.
+                        Her perspective will help shape benchmarks that evaluate how robots respond to human motion,
+                        intent, and changing roles during dynamic collaboration, while incorporating interaction quality,
+                        safety, and robustness alongside conventional task-performance metrics.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="images/aaron-ames.jpg" alt="Prof. Aaron Ames">
+                    <div class="name">Prof. Aaron Ames</div>
+                    <div class="affiliation">California Institute of Technology, USA</div>
+                    <div class="speaker-status pending">Invited · Confirmation pending</div>
+                    <div class="talk-title">Talk title: TBD</div>
+                    <p class="speaker-bio">
+                        Prof. Aaron Ames develops control-theoretic methods for dynamic locomotion and safety-critical
+                        autonomy, with extensive validation on bipedal robotic systems. His expertise will help shape
+                        sport-based benchmarks that evaluate safety constraint enforcement, controller intervention,
+                        robustness to disturbances, and the balance between athletic performance and safe operation.
+                    </p>
                 </div>
             </div>
         </section>
@@ -167,42 +360,71 @@
 
         <section id="call">
             <h2>Call for Submissions</h2>
-            <p>
-                We invite submissions of short demonstration papers of 1–2 pages with video material, or standalone
-                4-page manuscripts. We welcome contributions related to (but not limited to) the following themes:
-            </p>
-            <ul>
-                <li>Benchmarks for mixed human-robot sports</li>
-                <li>Design of humanoids and humanoid-like robots for athletic interaction</li>
-                <li>Models and algorithms for control, safety, communication, intent estimation, and decision making</li>
-            </ul>
-
-            <h3>Relevant RAS Technical Committee Categories</h3>
-            <ul>
-                <li><strong>Embodiment Design</strong></li>
-                <li><strong>Humanoid Robotics / Mechanisms and Design / Haptics</strong></li>
-                <li><strong>Control</strong> — Algorithms for Planning and Control of Robot Motion; Model-Based Optimization for Robotics; Robot Control; Whole-Body Control; Robot Learning; Mobile Manipulation</li>
-                <li><strong>Interaction</strong> — Multi-Robot Systems; Human-Robot Interaction &amp; Coordination; Human Movement Understanding; Social Robotics; Robot Ethics; Cognitive Robotics; Rehabilitation and Assistive Robotics</li>
-                <li><strong>Benchmarking</strong> — Performance Evaluation &amp; Benchmarking of Robotic and Automation Systems; RoboCup</li>
-            </ul>
+            <div>
+                <p>
+                    We will solicit contributed papers through targeted invitations and broad community outreach,
+                    including authors of recent relevant work, robotics mailing lists, industry and university groups,
+                    social media, and the network developed through previous RoboLetics workshops. We will invite
+                    non-archival submissions of up to four pages (excluding references) in the CoRL format, emphasizing
+                    original in-progress research, position papers, benchmark proposals, and system demonstrations.
+                    Submissions will be managed through OpenReview with submission, review and notification timelines
+                    advertised on the workshop website.
+                </p>
+                <p>
+                    Each submission will receive at least two independent reviews from qualified researchers, with
+                    decisions based on relevance, originality, technical quality, and potential to stimulate discussion.
+                    We will not set a fixed acceptance rate. Large language models will not be allowed for generating
+                    reviews, to preserve review integrity. Accepted papers will be presented as spotlight talks and
+                    posters.
+                </p>
+            </div>
 
             <h3>Submission Website</h3>
-            <p>TBD</p>
+            <p>OpenReview link: TBD</p>
 
             <h3>Important Dates</h3>
             <ul>
                 <li>Paper submission deadline: TBD</li>
-                <li>Video demonstration submission deadline: TBD</li>
                 <li>Author notification: TBD</li>
-                <li>Camera-ready submission: TBD</li>
             </ul>
 
             <h3>Submission Rules</h3>
-            <ul>
-                <li>Submissions must be in PDF format following the IEEE Conference template.</li>
-                <li>Reviewing will be single-blind (author identities are visible to reviewers).</li>
-                <li>Both unpublished original work and previously published work may be submitted.</li>
-            </ul>
+            <div>
+                <ul>
+                    <li>Submissions must be PDFs of up to four pages, excluding references, using the CoRL format.</li>
+                    <li>Submissions are non-archival and will be managed through OpenReview.</li>
+                    <li>Each submission will receive at least two independent reviews.</li>
+                    <li>Decisions will consider relevance, originality, technical quality, and discussion potential.</li>
+                    <li>Large language models will not be permitted for generating reviews.</li>
+                    <li>Accepted papers will be presented through spotlight talks and posters.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="participation">
+            <h2>Participation and Diversity</h2>
+            <p>
+                The workshop is designed to encourage active participation and meaningful discussion among attendees
+                across all career stages. Student spotlight presentations and interactive poster sessions will provide
+                opportunities for early-career researchers to receive feedback from experts in the field. Talks will
+                provide time for questions and engagement with invited speakers. We additionally designate moderated
+                discussion periods following invited talks to allow open-ended discourse among audiences on key themes.
+                Breakout sessions are designed to encourage collaboration between diverse participants towards preparing
+                short proposals that identify key research gaps. Finally, the workshop will conclude with a panel
+                discussion bringing together invited speakers from academia and industry towards outlining a community
+                roadmap for mixed human-robot sports based benchmarks.
+            </p>
+        </section>
+
+        <section id="partnership">
+            <h2>Partnership and Best Paper Award</h2>
+            <div class="info-box">
+                <p>
+                    RoboLetics 3.0 is organized in partnership with the Robotics and AI Institute. A best paper award
+                    will recognize an outstanding contribution through a cash award sponsored by the Robotics and AI
+                    Institute.
+                </p>
+            </div>
         </section>
 
         <section id="organizers">
@@ -216,7 +438,7 @@
                 <div class="card">
                     <img src="images/andrew-morgan.png" alt="Dr. Andrew Morgan">
                     <div class="name">Dr. Andrew Morgan</div>
-                    <div class="affiliation">RAI Institute, USA</div>
+                    <div class="affiliation">Robotics and AI Institute, USA</div>
                 </div>
                 <div class="card">
                     <img src="images/varshith-sreeramdass.png" alt="Varshith Sreeramdass">
@@ -258,11 +480,14 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>All questions about submissions or the workshop should be emailed to any of the following people:</p>
-            <ul>
-                <li>Varshith Sreeramdass — <a href="mailto:vsreeramdass@gatech.edu">vsreeramdass@gatech.edu</a></li>
-                <li>Kin Man Lee — <a href="mailto:klee863@gatech.edu">klee863@gatech.edu</a></li>
-            </ul>
+            <div>
+                <p>Questions about submissions or the workshop may be sent to:</p>
+                <ul>
+                    <li>Matthew Gombolay — <a href="mailto:matthew.gombolay@cc.gatech.edu">matthew.gombolay@cc.gatech.edu</a></li>
+                    <li>Varshith Sreeramdass — <a href="mailto:vsreeramdass@gatech.edu">vsreeramdass@gatech.edu</a></li>
+                    <li>Kin Man Lee — <a href="mailto:klee863@gatech.edu">klee863@gatech.edu</a></li>
+                </ul>
+            </div>
         </section>
 
         <section id="previous">
@@ -283,7 +508,7 @@
     </main>
 
     <footer>
-        <p>RoboLetics 3.0 — Workshop on Humanoid Embodiment in Mixed Human-Robot Sports @ IROS 2026</p>
+        <p>RoboLetics 3.0 — Benchmarks for Agile Physical Human-Robot Interaction @ CoRL 2026</p>
     </footer>
 </body>
 </html>

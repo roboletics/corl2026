@@ -29,6 +29,18 @@ a:hover {
     text-decoration: underline;
 }
 
+.portrait-placeholder {
+    align-items: center;
+    background: #e8eaed;
+    color: var(--secondary-text);
+    display: flex;
+    font-size: 14px;
+    height: 150px;
+    justify-content: center;
+    margin: 0 auto 12px;
+    width: 120px;
+}
+
 /* Navigation */
 nav {
     background: var(--bg);
@@ -128,6 +140,10 @@ li {
     margin-top: 16px;
 }
 
+.card-grid.speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -139,7 +155,7 @@ li {
 .card img {
     width: 120px;
     height: 150px;
-    border-radius: 0;
+    border-radius: 12px;
     object-fit: cover;
     margin: 0 auto 12px;
     display: block;
@@ -157,10 +173,29 @@ li {
     margin-bottom: 8px;
 }
 
+.card .speaker-status {
+    color: #137333;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.card .speaker-status.pending {
+    color: #b06000;
+}
+
 .card .talk-title {
     font-size: 14px;
     font-style: italic;
     color: var(--secondary-text);
+}
+
+.card .speaker-bio {
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+    margin: 14px 0 0;
+    padding-top: 14px;
+    text-align: left;
 }
 
 .info-box {
@@ -235,6 +270,10 @@ footer {
 @media (max-width: 600px) {
     header h1 {
         font-size: 24px;
+    }
+
+    .card-grid.speakers-grid {
+        grid-template-columns: 1fr;
     }
 
     nav ul {
