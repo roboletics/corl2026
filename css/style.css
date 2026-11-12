@@ -153,6 +153,25 @@ li {
     font-size: 14px;
 }
 
+.award-list {
+    list-style: none;
+    margin: 8px 0;
+    padding-left: 0;
+}
+
+.award-list li {
+    margin-bottom: 16px;
+}
+
+.award-name {
+    display: block;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
