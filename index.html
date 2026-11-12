@@ -10,11 +10,11 @@
     <nav aria-label="Main navigation">
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#benchmark">Benchmark</a></li>
             <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#speakers">Confirmed Speakers</a></li>
+            <li><a href="#speakers">Speakers</a></li>
             <li><a href="#accepted">Accepted Submissions</a></li>
-            <li><a href="#call">Call for Papers and Demos</a></li>
+            <li><a href="#benchmark">Benchmark</a></li>
+            <li><a href="#call">Archived Call for Papers</a></li>
             <li><a href="#organizers">Organizers</a></li>
         </ul>
     </nav>
@@ -22,15 +22,20 @@
     <header id="home">
         <h1>RoboLetics 3.0: Benchmarks for Agile Physical Human-Robot Interaction</h1>
         <p>CoRL 2026 Workshop</p>
+        <a class="header-venue" href="#venue">
+            <span><time datetime="2026-11-12">November 12, 2026</time></span>
+            <span>Hilton Austin, Salon D</span>
+            <span>Austin, TX</span>
+        </a>
     </header>
 
     <main>
         <section id="venue">
             <h2>Venue and Date</h2>
-            <div class="info-box">
+            <div class="info-box venue-box">
                 <p><strong>Event:</strong> Conference on Robot Learning (CoRL) 2026</p>
                 <p><strong>Date:</strong> <time datetime="2026-11-12">November 12, 2026</time></p>
-                <p><strong>Location:</strong> Hilton Austin, 500 E 4th St, Austin, TX 78701, USA</p>
+                <p><strong>Location:</strong> Hilton Austin, 500 E 4th St, Austin, TX 78701, USA (<a href="https://www.google.com/maps/search/?api=1&amp;query=Hilton+Austin+500+E+4th+St+Austin+TX+78701" target="_blank" rel="noopener noreferrer">map</a>)</p>
                 <p><strong>Room:</strong> Salon D</p>
             </div>
         </section>
@@ -110,62 +115,6 @@
             </ul>
         </section>
 
-        <section id="benchmark">
-            <h2>Benchmark Prototype</h2>
-            <p>
-                As a concrete workshop outcome, we will develop a community-informed simulation benchmark prototype for
-                mixed human-robot sports, based on doubles tennis. The prototype, seeded by our prior wheelchair tennis
-                research, will be refined through input collected during the breakout sessions, moderated discussions,
-                and panel discussion. The goal is not to prescribe a single benchmark in advance, but to use the
-                workshop to identify reusable design principles for sport-inspired simulation benchmarks, including task
-                abstractions, difficulty progressions, safety constraints, fairness criteria, and evaluation metrics.
-            </p>
-            <p>
-                The doubles tennis benchmark will consider the following progressively rich levels. Videos of baseline
-                behaviors are available below. Workshop feedback will be used to define both objective metrics, such as
-                task success and game score, and human-centered metrics, such as perceived safety, workload, and
-                enjoyment.
-            </p>
-            <ol>
-                <li>
-                    <strong>Kinematic Interception:</strong> The agent must navigate to place an incoming ball within the
-                    racket workspace.
-                </li>
-                <li>
-                    <strong>Dynamic Returns:</strong> The agent must return the ball to the opponent’s side considering
-                    actuator, ball-flight, and racket-ball contact dynamics.
-                </li>
-                <li>
-                    <strong>Collaborative Rally:</strong> Human/robot collaborators are introduced in 1+1 or 2+2
-                    configurations and success is measured by safe sustained rallying. This level supports two settings:
-                    (1) policies for all agents are learned jointly; (2) policies for collaborators are predefined.
-                </li>
-                <li>
-                    <strong>Competitive:</strong> The agent must compete and defeat the opponent in a 1v1 setting with a
-                    standard tennis scoring scheme. Opponent policies of various proficiencies are provided.
-                </li>
-                <li>
-                    <strong>Mixed Collaboration-Competition:</strong> The agent must collaborate with its teammate and
-                    defeat the opponent team in a 2v2 configuration. Opponent team policies of various proficiencies are
-                    provided. This level supports two settings: (1) policies for the agent and teammate are learned
-                    jointly; (2) policies for the collaborating teammate are predefined.
-                </li>
-            </ol>
-            <p>
-                Predefined behaviors for proxy-human agents will be initially realized with scripted, parameterized
-                policies, baseline learning/planning agents, and in the long-term support richer community-developed
-                human behavior models.
-            </p>
-            <video controls playsinline preload="metadata" width="910" height="512"
-                   poster="videos/roboletics_benchmark_preview.jpg"
-                   aria-label="RoboLetics benchmark preview"
-                   style="display: block; width: 100%; height: auto; aspect-ratio: 910 / 512; background: #111;">
-                <source src="videos/roboletics_benchmark_preview.mp4?v=20261026" type="video/mp4">
-                Your browser does not support embedded video.
-            </video>
-            <p><a href="videos/roboletics_benchmark_preview.mp4?v=20261026">Watch the benchmark video</a></p>
-        </section>
-
         <section id="schedule">
             <h2>Schedule</h2>
             <div class="table-wrapper">
@@ -174,100 +123,129 @@
                         <thead>
                             <tr>
                                 <th scope="col">Time</th>
-                                <th scope="col">Talk</th>
-                                <th scope="col">Comments</th>
+                                <th scope="col">Session</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><time datetime="08:30">8:30</time>–<time datetime="08:40">8:40 am</time></td>
-                                <td>Introduction</td>
-                                <td>Matthew Gombolay</td>
+                                <td>Introduction by Dr. Andrew Morgan</td>
                             </tr>
                             <tr>
                                 <td><time datetime="08:40">8:40</time>–<time datetime="09:00">9:00 am</time></td>
-                                <td>Talk 1</td>
-                                <td>Taeyoon Lee</td>
+                                <td>
+                                    Talk: Dr. Taeyoon Lee<span class="schedule-talk-title">Beyond Demos: Rethinking Benchmarks in Robot Manipulation</span>
+                                    <details class="talk-abstract">
+                                        <summary>Abstract</summary>
+                                        <p>
+                                            Robot demonstrations have historically pushed the boundaries of what robots can physically
+                                            accomplish. As impressive manipulation demonstrations become increasingly common, perhaps it
+                                            is time to shift our focus from what robots can do to how reliably they can do it. Drawing on
+                                            our recent work on robot juggling, I will discuss the limitations of benchmarks that place too
+                                            much emphasis on zero-shot performance and reproducibility, and argue for benchmarks that
+                                            measure how reliably and efficiently robots adapt through their own experience. I will also
+                                            argue that safety need not be viewed as a means of imposing conservative limits on a robot's
+                                            capabilities, but rather as a way to reliably achieve high performance.
+                                        </p>
+                                    </details>
+                                </td>
                             </tr>
                             <tr>
                                 <td><time datetime="09:00">9:00</time>–<time datetime="09:20">9:20 am</time></td>
-                                <td>Talk 2</td>
-                                <td>Lujie Yang</td>
+                                <td>
+                                    Talk: Dr. Lujie Yang<span class="schedule-talk-title">From Human Motion to Agile Humanoids: Interaction-Preserving Retargeting and Perceptive Parkour</span>
+                                    <details class="talk-abstract">
+                                        <summary>Abstract</summary>
+                                        <p>
+                                            Humans exhibit remarkable agility and versatility in navigating complex environments and
+                                            interacting with the physical world. Enabling humanoid robots to achieve similar capabilities
+                                            requires more than robust locomotion: robots must also learn physically feasible whole-body
+                                            behaviors, preserve meaningful interactions with objects and the environment, and compose
+                                            dynamic skills to adapt to changing situations.
+                                        </p>
+                                        <p>
+                                            In this talk, I will present two complementary approaches toward building agile humanoid
+                                            robots from human motion. First, OmniRetarget introduces an interaction-preserving motion
+                                            retargeting framework that transfers human demonstrations to different robot embodiments
+                                            while maintaining critical spatial and contact relationships between the robot, manipulated
+                                            objects, and surrounding terrain. By enforcing physical and kinematic constraints,
+                                            OmniRetarget generates high-quality motion data and enables systematic augmentation across
+                                            robot embodiments, object configurations, and environments. Second, Perceptive Humanoid
+                                            Parkour builds upon these retargeted human skills to enable long-horizon, perception-driven
+                                            dynamic behaviors. Through motion matching, reinforcement learning, and depth-based policy
+                                            distillation, a Unitree G1 humanoid learns to compose diverse parkour skills, autonomously
+                                            navigate challenging obstacle courses, and adapt to real-time environmental changes.
+                                        </p>
+                                        <p>
+                                            Together, these works demonstrate how human motion can serve as a foundation for developing
+                                            physically grounded, expressive, and adaptive humanoid behaviors, bridging the gap between
+                                            human demonstrations and agile real-world robot capabilities.
+                                        </p>
+                                    </details>
+                                </td>
                             </tr>
                             <tr>
                                 <td><time datetime="09:20">9:20</time>–<time datetime="09:30">9:30 am</time></td>
                                 <td>Moderated Audience Discussion</td>
-                                <td></td>
                             </tr>
                             <tr>
                                 <td><time datetime="09:30">9:30</time>–<time datetime="09:40">9:40 am</time></td>
-                                <td>Benchmark Discussion</td>
-                                <td></td>
+                                <td>A Doubles-Tennis based Simulation Benchmark for Agile Physical HRI</td>
                             </tr>
                             <tr>
                                 <td><time datetime="09:40">9:40</time>–<time datetime="10:20">10:20 am</time></td>
-                                <td>Student Paper Spotlights/Demo</td>
-                                <td></td>
+                                <td>Student Paper and Demo Spotlights</td>
                             </tr>
                             <tr>
                                 <td><time datetime="10:20">10:20</time>–<time datetime="11:00">11:00 am</time></td>
-                                <td>Poster Session</td>
-                                <td>Coffee Break — demo videos play in a loop on screen</td>
+                                <td>Poster Session (Coffee Break)</td>
                             </tr>
                             <tr>
                                 <td><time datetime="11:00">11:00</time>–<time datetime="11:20">11:20 am</time></td>
-                                <td>Talk 3</td>
-                                <td>Tapomayukh Bhattacharjee</td>
+                                <td>
+                                    Talk: Dr. Tapomayukh Bhattacharjee<span class="schedule-talk-title">Agile Physical Human-Robot Interaction Across Contact Scales: Reacting, Anticipating, and Adapting to Human Partners</span>
+                                    <details class="talk-abstract">
+                                        <summary>Abstract</summary>
+                                        <p>
+                                            In physical human-robot interaction, agility is not just speed. It is the ability to respond
+                                            quickly and appropriately to a human partner who moves, signals intent through touch, and
+                                            changes over time. Physical caregiving makes this concrete: a feeding robot must tell an
+                                            involuntary spasm from deliberate tongue guidance, while a robot using whole-arm touch during
+                                            bed-bathing must lower its force or avoid a body region when contact becomes uncomfortable.
+                                            In this talk, I will present work from the EmPRISE Lab across these contact scales, from
+                                            localized utensil contact to distributed whole-arm contact. I will show how robots can react
+                                            to their partners, anticipate both their needs and the evolving physical contact, and adapt
+                                            these responses to each person over time. I will conclude with key open problems and discuss
+                                            what benchmarks such as OpenRoboCare and CareEval can and cannot yet measure for agile pHRI.
+                                        </p>
+                                    </details>
+                                </td>
                             </tr>
                             <tr>
                                 <td><time datetime="11:20">11:20</time>–<time datetime="11:30">11:30 am</time></td>
                                 <td>Moderated Audience Discussion</td>
-                                <td></td>
                             </tr>
                             <tr>
                                 <td><time datetime="11:30">11:30 am</time>–<time datetime="12:00">12:00 pm</time></td>
                                 <td>Breakout Session</td>
-                                <td></td>
                             </tr>
                             <tr>
                                 <td><time datetime="12:00">12:00</time>–<time datetime="12:30">12:30 pm</time></td>
                                 <td>Panel Discussion</td>
-                                <td></td>
                             </tr>
                         </tbody>
                     </table>
             </div>
         </section>
 
-        <section id="breakout">
-            <h2>Structured Breakout Sessions</h2>
-            <p>
-                Participants will break out into groups of 5–7. The breakout session will be organized around different
-                axes of agile physical HRI that arise across multiple sport-inspired domains. Each group will be assigned
-                one axis and will collaboratively develop benchmark specifications and concrete evaluation protocols.
-                Candidate breakout axes include:
-            </p>
-            <ul>
-                <li><strong>Coordination across timescales:</strong> Benchmarks for collaboration across fast reactions, between-play adaptation, and longer-horizon strategy.</li>
-                <li><strong>Physical coupling and contact:</strong> Benchmarks for shared-object interaction, physical proximity, contact, and recovery from unexpected interaction.</li>
-                <li><strong>Communication and intent inference:</strong> Benchmarks for verbal, gestural, gaze-based, and implicit communication during fast physical collaboration.</li>
-                <li><strong>Role switching and initiative-taking:</strong> Benchmarks for dynamic transitions between leader, follower, supporter, defender, and initiator roles.</li>
-                <li><strong>Safety, trust, and graceful failure:</strong> Benchmarks for physical safety, perceived safety, trust calibration, and safe degradation under failure.</li>
-                <li><strong>Morphology and fairness:</strong> Benchmarks for comparing heterogeneous robot embodiments and defining fair evaluation rules across platforms.</li>
-            </ul>
-            <p>
-                Groups will collaborate on the assigned axis for 20 minutes and then present their outcomes in brief
-                2-minute pitches to the full workshop audience.
-            </p>
-        </section>
-
         <section id="speakers">
-            <h2>Confirmed Speakers</h2>
+            <h2>Speakers</h2>
             <div class="card-grid speakers-grid">
                 <div class="card">
                     <img src="images/taeyoon-lee.jpg" alt="Dr. Taeyoon Lee">
                     <div class="name">Dr. Taeyoon Lee</div>
                     <div class="affiliation">Research Scientist, Robotics and AI Institute, USA</div>
+                    <div class="talk-title">Beyond Demos: Rethinking Benchmarks in Robot Manipulation</div>
                     <p class="speaker-bio">
                         Dr. Taeyoon Lee is a Research Scientist at the Robotics and AI Institute. His research focuses
                         on systems and algorithms for dynamic and dexterous robot behaviors, with work spanning skill
@@ -279,19 +257,23 @@
                     <img src="images/tapomayukh-bhattacharjee.png" alt="Dr. Tapomayukh Bhattacharjee">
                     <div class="name">Dr. Tapomayukh Bhattacharjee</div>
                     <div class="affiliation">Cornell University, USA</div>
+                    <div class="talk-title">Agile Physical Human-Robot Interaction Across Contact Scales: Reacting, Anticipating, and Adapting to Human Partners</div>
                     <p class="speaker-bio">
-                        Prof. Tapomayukh Bhattacharjee directs Cornell's EmPRISE Lab, developing assistive robots that
-                        enable people with mobility limitations to perform activities of daily living. His work spans
-                        human-robot interaction, haptic perception, and robot manipulation, with an emphasis on
-                        safe, effective physical and social interaction in unstructured human environments.
+                        Dr. Tapomayukh Bhattacharjee is an Assistant Professor of Computer Science at Cornell University,
+                        where he directs the EmPRISE Lab, developing assistive robots that enable people with mobility
+                        limitations to perform activities of daily living. His work spans human-robot interaction, haptic
+                        perception, and robot manipulation, with an emphasis on safe, effective physical and social
+                        interaction in unstructured human environments. He received his Ph.D. in Robotics from Georgia Tech,
+                        and his honors include an NSF CAREER Award and a Best Paper Award at RSS 2025.
                     </p>
                 </div>
                 <div class="card">
-                    <img src="images/lujie-yang.jpg" alt="Lujie Yang">
-                    <div class="name">Lujie Yang</div>
+                    <img src="images/lujie-yang.jpg" alt="Dr. Lujie Yang">
+                    <div class="name">Dr. Lujie Yang</div>
                     <div class="affiliation">Amazon Frontier AI &amp; Robotics, USA</div>
+                    <div class="talk-title">From Human Motion to Agile Humanoids: Interaction-Preserving Retargeting and Perceptive Parkour</div>
                     <p class="speaker-bio">
-                        Lujie Yang is a Member of Technical Staff at Amazon Frontier AI &amp; Robotics. Her research
+                        Dr. Lujie Yang is a Member of Technical Staff at Amazon Frontier AI &amp; Robotics. Her research
                         combines model-based optimization and data-driven methods to develop robust, data-efficient
                         robots with human-like dexterity, agility, and intelligence for contact-rich manipulation and
                         whole-body loco-manipulation.
@@ -350,57 +332,137 @@
             </ol>
         </section>
 
-        <section id="call">
-            <h2>Call for Papers and Demos</h2>
+        <section id="benchmark">
+            <h2>Benchmark Prototype</h2>
             <p>
-                We invite paper and demo submissions that advance agile physical human-robot interaction through
-                sport-inspired challenges and benchmarks. Relevant topics include robot learning and control for
-                dynamic interaction, human-robot coordination, communication and intent inference, safety and trust,
-                embodiment design, and fair evaluation across robot morphologies.
+                As a concrete workshop outcome, we will develop a community-informed simulation benchmark prototype for
+                mixed human-robot sports, based on doubles tennis. The prototype, seeded by our prior wheelchair tennis
+                research, will be refined through input collected during the breakout sessions, moderated discussions,
+                and panel discussion. The goal is not to prescribe a single benchmark in advance, but to use the
+                workshop to identify reusable design principles for sport-inspired simulation benchmarks, including task
+                abstractions, difficulty progressions, safety constraints, fairness criteria, and evaluation metrics.
             </p>
             <p>
-                We welcome work that presents new methods, benchmark designs, evaluation frameworks, experimental
-                results, or perspectives that can help shape the future of agile and collaborative robotics.
+                The doubles tennis benchmark will consider the following progressively rich levels. Videos of baseline
+                behaviors are available below. Workshop feedback will be used to define both objective metrics, such as
+                task success and game score, and human-centered metrics, such as perceived safety, workload, and
+                enjoyment.
             </p>
+            <ol>
+                <li>
+                    <strong>Kinematic Interception:</strong> The agent must navigate to place an incoming ball within the
+                    racket workspace.
+                </li>
+                <li>
+                    <strong>Dynamic Returns:</strong> The agent must return the ball to the opponent’s side considering
+                    actuator, ball-flight, and racket-ball contact dynamics.
+                </li>
+                <li>
+                    <strong>Collaborative Rally:</strong> Human/robot collaborators are introduced in 1+1 or 2+2
+                    configurations and success is measured by safe sustained rallying. This level supports two settings:
+                    (1) policies for all agents are learned jointly; (2) policies for collaborators are predefined.
+                </li>
+                <li>
+                    <strong>Competitive:</strong> The agent must compete and defeat the opponent in a 1v1 setting with a
+                    standard tennis scoring scheme. Opponent policies of various proficiencies are provided.
+                </li>
+                <li>
+                    <strong>Mixed Collaboration-Competition:</strong> The agent must collaborate with its teammate and
+                    defeat the opponent team in a 2v2 configuration. Opponent team policies of various proficiencies are
+                    provided. This level supports two settings: (1) policies for the agent and teammate are learned
+                    jointly; (2) policies for the collaborating teammate are predefined.
+                </li>
+            </ol>
             <p>
-                <strong>Extended submission deadline (papers and demos):</strong>
-                <time datetime="2026-10-23T23:59:00-12:00">October 23, 2026, at 11:59 p.m.</time>
-                Anywhere on Earth (AoE, UTC−12). This is a one-week extension.
+                Predefined behaviors for proxy-human agents will be initially realized with scripted, parameterized
+                policies, baseline learning/planning agents, and in the long-term support richer community-developed
+                human behavior models.
             </p>
-            <p>
-                Papers and demos are separate submission tracks, and contributors may submit to either or both.
-                In-person presentation at the workshop is highly recommended. Both paper and demo submissions should
-                be made through the
-                <a href="https://openreview.net/group?id=robot-learning.org/CoRL/2026/Workshop/Roboletics"
-                   target="_blank" rel="noopener noreferrer">RoboLetics OpenReview page</a>.
-            </p>
+            <video controls playsinline preload="metadata" width="910" height="512"
+                   poster="videos/roboletics_benchmark_preview.jpg"
+                   aria-label="RoboLetics benchmark preview"
+                   style="display: block; width: 100%; height: auto; aspect-ratio: 910 / 512; background: #111;">
+                <source src="videos/roboletics_benchmark_preview.mp4?v=20261026" type="video/mp4">
+                Your browser does not support embedded video.
+            </video>
+            <p><a href="videos/roboletics_benchmark_preview.mp4?v=20261026">Watch the benchmark video</a></p>
+        </section>
 
-            <h3>Paper Submission Guidelines</h3>
+        <section id="breakout">
+            <h2>Structured Breakout Sessions</h2>
             <p>
-                Papers must contain no more than 4 pages of main content, excluding references. An optional appendix
-                may be uploaded separately as supplementary material. The main paper must be self-contained.
-            </p>
-
-            <h3>Demo Submission Guidelines</h3>
-            <p>
-                Demo submissions should include a demonstration video uploaded as supplementary material on OpenReview.
-                We strongly encourage presenters to also demonstrate their work in person at the workshop.
-            </p>
-
-            <h3>Paper and Demo Prizes</h3>
-            <p>
-                Outstanding paper and demo submissions will be recognized with the following cash prizes:
+                Participants will break out into groups of 5–7. The breakout session will be organized around different
+                axes of agile physical HRI that arise across multiple sport-inspired domains. Each group will be assigned
+                one axis and will collaboratively develop benchmark specifications and concrete evaluation protocols.
+                Candidate breakout axes include:
             </p>
             <ul>
-                <li><strong>Best Paper:</strong> $300 USD</li>
-                <li><strong>Second-Best Paper:</strong> $200 USD</li>
-                <li><strong>Best Demo:</strong> $300 USD</li>
-                <li><strong>Second-Best Demo:</strong> $200 USD</li>
+                <li><strong>Coordination across timescales:</strong> Benchmarks for collaboration across fast reactions, between-play adaptation, and longer-horizon strategy.</li>
+                <li><strong>Physical coupling and contact:</strong> Benchmarks for shared-object interaction, physical proximity, contact, and recovery from unexpected interaction.</li>
+                <li><strong>Communication and intent inference:</strong> Benchmarks for verbal, gestural, gaze-based, and implicit communication during fast physical collaboration.</li>
+                <li><strong>Role switching and initiative-taking:</strong> Benchmarks for dynamic transitions between leader, follower, supporter, defender, and initiator roles.</li>
+                <li><strong>Safety, trust, and graceful failure:</strong> Benchmarks for physical safety, perceived safety, trust calibration, and safe degradation under failure.</li>
+                <li><strong>Morphology and fairness:</strong> Benchmarks for comparing heterogeneous robot embodiments and defining fair evaluation rules across platforms.</li>
             </ul>
             <p>
-                RoboLetics 3.0 is organized in partnership with the Robotics and AI Institute, which sponsors these
-                awards.
+                Groups will collaborate on the assigned axis for 20 minutes and then present their outcomes in brief
+                2-minute pitches to the full workshop audience.
             </p>
+        </section>
+
+        <section id="call">
+            <details class="collapsible">
+                <summary><h2>Archived Call for Papers and Demos</h2></summary>
+                <p>
+                    We invite paper and demo submissions that advance agile physical human-robot interaction through
+                    sport-inspired challenges and benchmarks. Relevant topics include robot learning and control for
+                    dynamic interaction, human-robot coordination, communication and intent inference, safety and trust,
+                    embodiment design, and fair evaluation across robot morphologies.
+                </p>
+                <p>
+                    We welcome work that presents new methods, benchmark designs, evaluation frameworks, experimental
+                    results, or perspectives that can help shape the future of agile and collaborative robotics.
+                </p>
+                <p>
+                    <strong>Extended submission deadline (papers and demos):</strong>
+                    <time datetime="2026-10-23T23:59:00-12:00">October 23, 2026, at 11:59 p.m.</time>
+                    Anywhere on Earth (AoE, UTC−12). This is a one-week extension.
+                </p>
+                <p>
+                    Papers and demos are separate submission tracks, and contributors may submit to either or both.
+                    In-person presentation at the workshop is highly recommended. Both paper and demo submissions should
+                    be made through the
+                    <a href="https://openreview.net/group?id=robot-learning.org/CoRL/2026/Workshop/Roboletics"
+                       target="_blank" rel="noopener noreferrer">RoboLetics OpenReview page</a>.
+                </p>
+
+                <h3>Paper Submission Guidelines</h3>
+                <p>
+                    Papers must contain no more than 4 pages of main content, excluding references. An optional appendix
+                    may be uploaded separately as supplementary material. The main paper must be self-contained.
+                </p>
+
+                <h3>Demo Submission Guidelines</h3>
+                <p>
+                    Demo submissions should include a demonstration video uploaded as supplementary material on OpenReview.
+                    We strongly encourage presenters to also demonstrate their work in person at the workshop.
+                </p>
+
+                <h3>Paper and Demo Prizes</h3>
+                <p>
+                    Outstanding paper and demo submissions will be recognized with the following cash prizes:
+                </p>
+                <ul>
+                    <li><strong>Best Paper:</strong> $300 USD</li>
+                    <li><strong>Second-Best Paper:</strong> $200 USD</li>
+                    <li><strong>Best Demo:</strong> $300 USD</li>
+                    <li><strong>Second-Best Demo:</strong> $200 USD</li>
+                </ul>
+                <p>
+                    RoboLetics 3.0 is organized in partnership with the Robotics and AI Institute, which sponsors these
+                    awards.
+                </p>
+            </details>
         </section>
 
         <section id="organizers">
@@ -486,5 +548,12 @@
     <footer>
         <p>RoboLetics 3.0 — Benchmarks for Agile Physical Human-Robot Interaction @ CoRL 2026</p>
     </footer>
+    <script>
+        function openCallFromHash() {
+            if (location.hash === "#call") document.querySelector("#call details").open = true;
+        }
+        window.addEventListener("hashchange", openCallFromHash);
+        openCallFromHash();
+    </script>
 </body>
 </html>
